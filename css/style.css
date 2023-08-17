@@ -169,11 +169,6 @@ h1 {
 }
 
 
-
-
-.btnbox2 {
-    /* text-align: center; */
-}
 .giantbtn2 {
     background-color: #FFE600;
     color: white;
@@ -209,6 +204,4 @@ h1 {
     /* add stroke outside*/
     -webkit-text-stroke: 1.5px black;
     text-shadow: 0.2rem 0.2rem #9F4040;
-}
-.mainform label {
 }
