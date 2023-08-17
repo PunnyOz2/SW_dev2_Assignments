@@ -205,3 +205,16 @@ h1 {
     -webkit-text-stroke: 1.5px black;
     text-shadow: 0.2rem 0.2rem #9F4040;
 }
+.inputbox {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.inputbox input:not(#booth_table),select {
+    font-size: 15px;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    border: none;
+    outline: 3px solid black;
+    box-shadow: 5px 5px black;
+}

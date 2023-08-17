@@ -24,26 +24,33 @@
         <div class="formbox">
             <form class="mainform">
                 <h3>สนใจแสดงสินค้า</h3>
-                <label for="company_name">ชื่อบริษัท:</label>
-                <input type="text" id="company_name" name="company_name" required><br><br>
-                
-                <label for="booth_size">ขนาดบูธ:</label>
-                <select id="booth_size" name="booth_size">
-                    <option value="10x10">10x10 ฟุต</option>
-                    <option value="10x15">10x15 ฟุต</option>
-                </select><br><br>
-                
-                <input type="checkbox" id="booth_table" name="booth_table">
-                <label for="booth_table">ต้องการโต๊ะตั้งในบูธ</label><br><br>
-                
-                <label for="chair_count">จำนวนเก้าอี้:</label>
-                <input type="number" id="chair_count" name="chair_count" min="0" required><br><br>
-                
-                <label for="contact_name">ชื่อผู้ติดต่อ:</label>
-                <input type="text" id="contact_name" name="contact_name" required><br><br>
-                
-                <label for="contact_number">เบอร์ผู้ติดต่อ:</label>
-                <input type="tel" id="contact_number" name="contact_number" required><br><br>
+                <div class="inputbox">
+                    <label for="company_name">ชื่อบริษัท:</label>
+                    <input type="text" id="company_name" name="company_name" required>
+                </div>
+                <div class="inputbox">
+                    <label for="booth_size">ขนาดบูธ:</label>
+                    <select id="booth_size" name="booth_size">
+                        <option value="10x10">10x10 ฟุต</option>
+                        <option value="10x15">10x15 ฟุต</option>
+                    </select>
+                </div>
+                <div class="inputbox">
+                    <label for="booth_table">ต้องการโต๊ะตั้งในบูธ</label>
+                    <input type="checkbox" id="booth_table" name="booth_table">
+                </div>
+                <div class="inputbox">
+                    <label for="chair_count">จำนวนเก้าอี้:</label>
+                    <input type="number" id="chair_count" name="chair_count" min="1" value="1" required>
+                </div>
+                <div class="inputbox">
+                    <label for="contact_name">ชื่อผู้ติดต่อ:</label>
+                    <input type="text" id="contact_name" name="contact_name" required>
+                </div>
+                <div class="inputbox">
+                    <label for="contact_number">เบอร์ผู้ติดต่อ:</label>
+                    <input type="tel" id="contact_number" name="contact_number" required>
+                </div>
                 
                 <button id="submitButton" class="giantbtn" onclick="verifyForm()" type="button">ส่งข้อมูล</button>
             </form>
