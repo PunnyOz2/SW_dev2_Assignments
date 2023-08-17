@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruang Kao Lao Mai</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/registerscript.js"></script>
 </head>
 <body>
     <header>
@@ -44,7 +45,7 @@
                 <label for="contact_number">เบอร์ผู้ติดต่อ:</label>
                 <input type="tel" id="contact_number" name="contact_number" required><br><br>
                 
-                <input type="submit" value="ส่งข้อมูล" class="giantbtn">
+                <button id="submitButton" class="giantbtn" onclick="verifyForm()" type="button">ส่งข้อมูล</button>
             </form>
         </div>
     </div>
